@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Torrent Leecher</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Torrent Leech Web App</h1>
+
+    <form id="torrentForm">
+      <input type="text" id="torrentInput" placeholder="Enter magnet URL">
+      <label for="torrentFileInput" class="file-label">Or select a torrent file:</label>
+      <input type="file" id="torrentFileInput" class="file-input">
+      <button type="submit" id="startButton">Start Leeching</button>
+    </form>
+
+    <div id="outputArea">
+      <h2>Downloaded Files:</h2>
+      <ul id="fileList"></ul>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/webtorrent/latest/webtorrent.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

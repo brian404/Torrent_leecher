@@ -1,0 +1,9 @@
+deployments:
+  - name: torrent-leecher
+    source:
+      git:
+        url: https://github.com/brian404/Torrent_leecher
+    build:
+      steps:
+        - name: static
+          image: koyeb/static
